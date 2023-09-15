@@ -1,0 +1,121 @@
+.bg {
+  background: rgb(102, 13, 113);
+  background: linear-gradient(90deg, #aacbea, #b9567d);
+  font-family: "Roboto", sans-serif;
+}
+
+/* #region utilities */
+.text-vertical {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+/* #endregion utilities */
+
+#title_name {
+  padding-top: 5rem;
+  font-size: 50px;
+}
+
+.jumbotron {
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  border-left: 3px solid black;
+  border-bottom: 18px solid black;
+}
+
+.box {
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  border-bottom: 18px solid black;
+}
+
+.left_banner {
+  height: 100%;
+  width: 5%;
+  background: black;
+}
+
+.jumbo_text_container {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+
+#jumbo_text {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (min-width: 478px) {
+  #jumbo_text {
+    margin-left: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  #jumbo_text {
+    font-size: 20px;
+    margin-left: 4.5rem;
+  }
+}
+
+.jumbo_image {
+  height: 100%;
+  width: 50%;
+  background-image: url("../public/img/toni_bongiovi.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.image_menu {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
+
+@media only screen and (max-width: 560px) {
+  .jumbotron {
+    height: 350px;
+  }
+  .box {
+    height: 350px;
+  }
+  .text-vertical {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1090px) {
+  .jumbo_image {
+    background-size: 70%;
+  }
+}
+
+@media only screen and (min-width: 1554px) {
+  .jumbo_image {
+    background-size: 40%;
+  }
+}
+
+#saluto {
+  font-size: 45px;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 580px) {
+  #saluto {
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  #saluto {
+    margin-left: 5rem;
+  }
+}
