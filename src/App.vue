@@ -2,6 +2,7 @@
 <script>
 import AppPresentation from "./components/AppPresentation.vue";
 import AOS from "aos";
+import AppHeader from "./components/AppHeader.vue"
 export default {
   data() {
     components: {
@@ -12,11 +13,12 @@ export default {
   }, mounted() {
     AOS.init();
   },
-  components: { AppPresentation }
+  components: { AppPresentation, AppHeader }
 }
 </script>
 
 <template>
+  <AppHeader></AppHeader>
   <AppPresentation></AppPresentation>
   <div class="displayBox mt-5" data-aos="slide-right" data-aos-easing="ease-in">
 

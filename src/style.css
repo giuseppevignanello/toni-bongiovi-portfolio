@@ -12,6 +12,13 @@
 }
 /* #endregion utilities */
 
+/* #region header */
+.app_header {
+  height: 50px;
+  background-color: #211f1f;
+}
+/* #endregion header */
+
 #title_name {
   padding-top: 5rem;
   font-size: 50px;
@@ -23,6 +30,15 @@
   margin: auto;
   border-left: 3px solid black;
   border-bottom: 18px solid black;
+}
+
+.jumbotron_background {
+  height: 600px;
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff4a;
+  display: flex;
+  align-items: center;
 }
 
 .box {
@@ -50,6 +66,7 @@
 
 #jumbo_text {
   margin-left: 1.5rem;
+  margin-right: 0.2rem;
 }
 
 @media only screen and (min-width: 478px) {
@@ -89,6 +106,9 @@
   }
   .text-vertical {
     font-size: 14px;
+  }
+  .jumbotron_background {
+    height: 450px;
   }
 }
 
