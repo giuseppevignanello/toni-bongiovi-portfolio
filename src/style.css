@@ -10,6 +10,11 @@
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
+
+.hover_scale_effect:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
 /* #endregion utilities */
 
 /* #region header */

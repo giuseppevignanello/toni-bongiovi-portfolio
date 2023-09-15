@@ -11,14 +11,20 @@ export default {
 
 <template>
     <div class="image_menu d-flex gap-2">
-        <div>
-            <i class="fa-solid fa-address-card fa-xl"></i>
+        <div class="hover_scale_effect">
+            <a href="" class="text-black">
+                <i class="fa-solid fa-address-card fa-xl"></i>
+            </a>
         </div>
-        <div>
-            <i class="fa-solid fa-paintbrush fa-xl"></i>
+        <div class="hover_scale_effect">
+            <a href="" class="text-black">
+                <i class="fa-solid fa-paintbrush fa-xl"></i>
+            </a>
         </div>
-        <div>
-            <i class="fa-solid fa-message fa-xl"></i>
+        <div class="hover_scale_effect">
+            <a href="" class="text-black">
+                <i class="fa-solid fa-message fa-xl"></i>
+            </a>
         </div>
     </div>
 </template>
