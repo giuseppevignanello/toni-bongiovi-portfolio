@@ -14,8 +14,8 @@ export default {
 
 <template>
   <div class="bg">
+    <h1 id="title_name" class="text-white text-center">Toni <strong>Bongiovì</strong> </h1>
     <div class="displayBox" data-aos="slide-left" data-aos-easing="ease-in">
-      <h1 id="title_name" class="text-white text-center">Toni <strong>Bongiovì</strong> </h1>
       <div>
         <div class="jumbotron d-flex mt-5">
           <div class="left_banner">
