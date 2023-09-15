@@ -23,7 +23,15 @@ export default {
   <div class="displayBox mt-5" data-aos="slide-right" data-aos-easing="ease-in">
 
     <div class="box">
-      <h1 class="text-center mt-5">Qua ci vanno alcuni quadri</h1>
+      <h1 class="text-center">I miei quadri</h1>
+    </div>
+  </div>
+
+  <div class="CTA">
+    <h3 class="text-center pt-3">Ti piacciono le mie opere?</h3>
+    <h2 class="text-center">Puoi comprarle!</h2>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-success">Contattami</button>
     </div>
   </div>
 
@@ -31,7 +39,7 @@ export default {
   <div class="displayBox mt-5" data-aos="slide-up" data-aos-easing="ease-in">
 
     <div class="box">
-      <h1 class="text-center mt-5">Qua ci mettiamo altri quadri</h1>
+      <h1>I miei quadri</h1>
     </div>
   </div>
   <footer class="bg-dark">

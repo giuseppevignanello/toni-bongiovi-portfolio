@@ -13,7 +13,9 @@ export default {
 </script>
 <template>
     <div class="jumbo_image position-relative">
-        <ImageMenu></ImageMenu>
+        <div class="displayBox mt-5" data-aos="zoom" data-aos-easing="ease-in" data-aos-delay="300">
+            <ImageMenu></ImageMenu>
+        </div>
     </div>
 </template>
 

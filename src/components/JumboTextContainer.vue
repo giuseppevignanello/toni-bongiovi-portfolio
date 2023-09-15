@@ -11,7 +11,9 @@ export default {
 <template>
     <div class="jumbo_text_container d-flex flex-column justify-content-around">
         <div>
-            <h2 id="saluto" class="mt-5">Ciao!</h2>
+            <div class="displayBox" data-aos="slide-down" data-aos-easing="ease-in" data-aos-delay="300">
+                <h2 id="saluto" class="mt-5">Ciao!</h2>
+            </div>
             <p id="jumbo_text" class="mt-4">Sono un artista e insegnante siciliano. Vivo e lavoro a Modena
             </p>
         </div>
