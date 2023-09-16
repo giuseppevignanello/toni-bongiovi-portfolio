@@ -5,15 +5,39 @@ import AOS from "aos";
 import AppHeader from "./components/AppHeader.vue"
 export default {
   data() {
-    components: {
-      AppPresentation;
-    }
-    ;
-    return {};
+
+    return {
+      images: [
+        { url: '../public/img/acrilico_tela.png', alt: 'Image 1' },
+        { url: '../public/img/modena.png', alt: 'Image 2' },
+        { url: '../public/img/sabbia_acrilico_1.png', alt: 'Image 3' },
+
+      ],
+      currentIndex: 0,
+      timer: null,
+    };
+  },
+  components: { AppPresentation, AppHeader },
+  methods: {
+    startCarousel() {
+      this.timer = setInterval(() => {
+        this.nextSlide();
+      }, 1200);
+    },
+    stopCarousel() {
+      clearInterval(this.timer);
+      this.timer = null;
+    },
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    },
   }, mounted() {
     AOS.init();
+    this.startCarousel();
   },
-  components: { AppPresentation, AppHeader }
+  beforeDestroy() {
+    this.stopCarousel();
+  },
 }
 </script>
 
@@ -23,7 +47,14 @@ export default {
   <div class="displayBox mt-5" data-aos="slide-right" data-aos-easing="ease-in">
 
     <div class="box">
-      <h1 class="text-center">I miei quadri</h1>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item" :class="{ active: currentIndex === index }" v-for="(image, index) in images"
+            :key="index">
+            <img :src="image.url" :alt="image.alt" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
