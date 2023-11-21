@@ -11,11 +11,11 @@ export default {
 <template>
     <div class="jumbo_text_container d-flex flex-column justify-content-around">
         <div>
-            <div class="displayBox">
-                <h2 id="saluto" class="mt-5">Ciao!</h2>
+            <div>
+                <h2 class="fw-bolder display-2 mt-5">Ciao!</h2>
             </div>
-            <p id="jumbo_text" class="mt-4">Sono un artista e insegnante siciliano. Vivo e lavoro a Modena
-            </p>
+            <p class="display-6 mt-4">
+                Sono un artista e insegnante siciliano. Vivo e lavoro a Modena</p>
         </div>
 
         <div class="socials d-flex gap-2 justify-content-center mt-3">

@@ -13,15 +13,15 @@ export default {
 
 <template>
     <div>
-        <h1 id="title_name" class="text-white text-center">Toni <strong>Bongiovì</strong> </h1>
-
-        <div>
-            <div class="jumbotron d-flex mt-5">
-                <JumboBanner></JumboBanner>
-                <JumboTextContainer></JumboTextContainer>
-                <JumboImage></JumboImage>
-            </div>
+        <div class="d-flex justify-content-center">
+            <h1 id="title_name" class="display-1 p-2"> Toni Bongiovì </h1>
         </div>
+        <div class=" jumbotron d-flex align-items-center justify-content-between gap-3">
+            <JumboBanner></JumboBanner>
+            <JumboTextContainer></JumboTextContainer>
+            <JumboImage class="col-5 col-xl-4"></JumboImage>
+        </div>
+
 
 
     </div>

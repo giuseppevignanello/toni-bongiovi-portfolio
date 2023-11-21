@@ -11,8 +11,8 @@ export default {
 </script>
 <template>
     <div class="jumbo_image">
-        <div class="displayBox mt-5">
-
+        <div class="toni">
+            <img src="../../public/img/toni.jpg" alt="">
         </div>
     </div>
 </template>
