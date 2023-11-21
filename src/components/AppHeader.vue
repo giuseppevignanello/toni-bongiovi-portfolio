@@ -13,9 +13,8 @@ export default {
     <div>
         <header class="app_header">
             <ul class="text-white list-unstyled d-flex justify-content-center gap-3 pt-3">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contacts</li>
+                <li>Su di me</li>
+                <li>Contattami</li>
             </ul>
         </header>
     </div>

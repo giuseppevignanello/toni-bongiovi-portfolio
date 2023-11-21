@@ -1,6 +1,5 @@
 #app {
-  background: rgb(102, 13, 113);
-  background: linear-gradient(90deg, #aacbea, #b9567d);
+  background-color: #5682b9cf;
   font-family: "Roboto", sans-serif;
 }
 
@@ -37,22 +36,10 @@
   border-bottom: 18px solid black;
 }
 
-.jumbotron_background {
-  height: 600px;
-  width: 90%;
-  margin: auto;
-  background-color: #ffffff4a;
-  display: flex;
-  align-items: center;
-}
-
 .box {
   height: 500px;
-  width: 80%;
+  width: 60%;
   margin: auto;
-  border: 3px solid black;
-  border-bottom: 18px solid black;
-  background-color: #ffffff4a;
 }
 
 .left_banner {
@@ -70,7 +57,6 @@
 }
 
 #jumbo_text {
-  margin-left: 1.5rem;
   margin-right: 0.2rem;
 }
 
@@ -176,22 +162,29 @@
 }
 
 .carousel-inner {
-  display: flex;
   transition: transform 0.5s ease;
   height: 100%;
+  width: 100%;
   justify-content: center;
 }
 
 .carousel-item {
-  flex: 0 0 100%;
   height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .active {
   opacity: 1;
 }
 
-img {
-  max-width: 100%;
+.carousel-item img {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   height: 100%;
+  border: 3px solid black;
+  border-bottom: 18px solid black;
 }

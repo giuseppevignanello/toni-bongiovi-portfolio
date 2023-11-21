@@ -15,7 +15,7 @@ export default {
     <div>
         <h1 id="title_name" class="text-white text-center">Toni <strong>Bongiovì</strong> </h1>
 
-        <div class="jumbotron_background">
+        <div>
             <div class="jumbotron d-flex mt-5">
                 <JumboBanner></JumboBanner>
                 <JumboTextContainer></JumboTextContainer>

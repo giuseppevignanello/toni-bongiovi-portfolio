@@ -22,7 +22,7 @@ export default {
     startCarousel() {
       this.timer = setInterval(() => {
         this.nextSlide();
-      }, 1200);
+      }, 2200);
     },
     stopCarousel() {
       clearInterval(this.timer);
@@ -44,14 +44,16 @@ export default {
 <template>
   <AppHeader></AppHeader>
   <AppPresentation></AppPresentation>
-  <div class="displayBox mt-5" data-aos="slide-right" data-aos-easing="ease-in">
+  <div class="displayBox mt-5">
 
     <div class="box">
       <div class="carousel">
         <div class="carousel-inner">
           <div class="carousel-item" :class="{ active: currentIndex === index }" v-for="(image, index) in images"
             :key="index">
+
             <img :src="image.url" :alt="image.alt" />
+
           </div>
         </div>
       </div>
@@ -67,9 +69,9 @@ export default {
   </div>
 
 
-  <div class="displayBox mt-5" data-aos="slide-up" data-aos-easing="ease-in">
+  <div class="displayBox mt-5">
 
-    <div class="box">
+    <div class="">
       <h1>I miei quadri</h1>
     </div>
   </div>
